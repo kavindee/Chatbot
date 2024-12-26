@@ -107,6 +107,13 @@ print("Answer:", answer)
 
 ---
 
+```Postman format
+{
+    "instruction": "how to do push ups"
+}
+
+```
+
 ## Acknowledgments
 
 - Hugging Face for the `transformers` and `datasets` libraries.
