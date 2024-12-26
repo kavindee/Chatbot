@@ -1,10 +1,10 @@
-# Fine-Tuning FLAN-T5 for Fitness Question-Answering Chatbot
+# Fine-Tuning FLAN-T5 for Fitness Question-Answering Chatbot 🚀💪
 
 This repository showcases the fine-tuning of the `google/flan-t5-large` model using LoRA (Low-Rank Adaptation) to create a fitness-related question-answering chatbot. The project leverages Hugging Face's `transformers` library and parameter-efficient training techniques for efficient and scalable model customization.
 
 ---
 
-## Table of Contents
+## Table of Contents 📚
 - [Overview](#overview)
 - [Dataset](#dataset)
 - [Setup](#setup)
@@ -16,7 +16,7 @@ This repository showcases the fine-tuning of the `google/flan-t5-large` model us
 
 ---
 
-## Overview
+## Overview 🌟
 
 This project demonstrates how to:
 - Preprocess a fitness Q&A dataset.
@@ -26,13 +26,13 @@ This project demonstrates how to:
 
 ---
 
-## Dataset
+## Dataset 📊
 
 The dataset used is [its-myrto/fitness-question-answers](https://huggingface.co/datasets/its-myrto/fitness-question-answers). It consists of fitness-related questions and their corresponding answers, divided into training and testing sets.
 
 ---
 
-## Setup
+## Setup 🛠️
 
 ### Requirements
 
@@ -43,7 +43,7 @@ pip install transformers datasets peft pandas scikit-learn huggingface_hub
 
 ---
 
-## Training Pipeline
+## Training Pipeline 🏋️‍♂️
 
 ### Steps:
 1. **Dataset Loading and Splitting**:
@@ -51,7 +51,7 @@ pip install transformers datasets peft pandas scikit-learn huggingface_hub
    - Split into training and testing sets with an 80-20 ratio.
 
 2. **Preprocessing**:
-   - Tokenize questions and answers.
+   - Tokenize questions and answers. (You have to get a token in Hugging Face, it is required in the model training)
    - Pad and truncate sequences to a fixed length.
 
 3. **Model Configuration**:
@@ -68,7 +68,7 @@ pip install transformers datasets peft pandas scikit-learn huggingface_hub
 
 ---
 
-## Features
+## Features ✨
 
 - **Base Model**: FLAN-T5 Large.
 - **Fine-Tuning**: Low-rank adaptation (LoRA) for memory and computational efficiency.
@@ -77,13 +77,13 @@ pip install transformers datasets peft pandas scikit-learn huggingface_hub
 
 ---
 
-## Results
+## Results 📈
 
 The fine-tuned model achieves robust performance in generating contextually accurate and coherent answers to fitness-related queries.
 
 ---
 
-## Deployment
+## Deployment 🌐
 
 The model is pushed to the Hugging Face Hub for easy access. You can load and test the model using the following snippet:
 
@@ -114,7 +114,7 @@ print("Answer:", answer)
 
 ```
 
-## Acknowledgments
+## Acknowledgments 🙌
 
 - Hugging Face for the `transformers` and `datasets` libraries.
 - Dataset creator for the [Fitness Question-Answers dataset](https://huggingface.co/datasets/its-myrto/fitness-question-answers).
